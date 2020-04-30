@@ -49,6 +49,12 @@ body .wrapper::before {
   opacity: .8;
 }
 
+body .wrapper .header {
+  z-index: 2;
+  margin: 0 0 50px 0;
+  font-size: 30px;
+}
+
 body .wrapper .nav {
   z-index: 1;
 }
@@ -82,6 +88,11 @@ body .wrapper .nav .navlinks .navlink .btn {
   padding: 10px;
 }
 
+body .wrapper .nav .navlinks .navlink .btn:hover {
+  background-color: #eee;
+  color: #111;
+}
+
 body .wrapper .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,8 +118,8 @@ body .wrapper .search .search-bar {
   width: 27vw;
   height: 35px;
   border: 1px solid #555;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #000;
-  font-size: 1.2rem;
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=main.css.map */
