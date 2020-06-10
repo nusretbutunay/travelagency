@@ -19,10 +19,11 @@ body {
   color: #eee;
 }
 
-body .wrapper {
+.wrapper {
   background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,26 +41,26 @@ body .wrapper {
   padding: 0 25px;
 }
 
-body .wrapper::before {
+.wrapper::before {
   content: "";
   position: fixed;
   background-color: #000;
   width: 100%;
   height: 100%;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-body .wrapper .header {
+.wrapper .header {
   z-index: 2;
   margin: 0 0 50px 0;
   font-size: 30px;
 }
 
-body .wrapper .nav {
+.wrapper .nav {
   z-index: 1;
 }
 
-body .wrapper .nav .navlinks {
+.wrapper .nav .navlinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,12 +76,12 @@ body .wrapper .nav .navlinks {
           justify-content: center;
 }
 
-body .wrapper .nav .navlinks .navlink {
+.wrapper .nav .navlinks .navlink {
   padding: 0 20px;
   margin-bottom: 30px;
 }
 
-body .wrapper .nav .navlinks .navlink .btn {
+.wrapper .nav .navlinks .navlink .btn {
   color: #fff;
   cursor: pointer;
   border: 1px solid #fff;
@@ -88,12 +89,12 @@ body .wrapper .nav .navlinks .navlink .btn {
   padding: 10px;
 }
 
-body .wrapper .nav .navlinks .navlink .btn:hover {
+.wrapper .nav .navlinks .navlink .btn:hover {
   background-color: #eee;
   color: #111;
 }
 
-body .wrapper .search {
+.wrapper .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,19 +108,18 @@ body .wrapper .search {
   z-index: 1;
 }
 
-body .wrapper .search h1 {
+.wrapper .search h1 {
   padding: 15px;
   border-bottom: 1px solid #fff;
 }
 
-body .wrapper .search .search-bar {
+.wrapper .search .search-bar {
   margin-top: 20px;
   padding: 10px;
-  width: 27vw;
+  width: 300px;
   height: 35px;
   border: 1px solid #555;
   border-radius: 5px;
   color: #000;
   font-size: 1.1em;
 }
-/*# sourceMappingURL=main.css.map */
